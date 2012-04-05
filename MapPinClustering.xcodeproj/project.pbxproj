@@ -154,7 +154,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = "Universal Mind, Inc";
+				ORGANIZATIONNAME = "";
 			};
 			buildConfigurationList = 0AF1574E152DCF1800FB2DC0 /* Build configuration list for PBXProject "MapPinClustering" */;
 			compatibilityVersion = "Xcode 3.2";
