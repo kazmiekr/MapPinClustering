@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5AE021152DFF8900375ABB /* ClusteringMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5AE020152DFF8900375ABB /* ClusteringMapView.m */; };
 		0AF15759152DCF1800FB2DC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF15758152DCF1800FB2DC0 /* UIKit.framework */; };
 		0AF1575B152DCF1800FB2DC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF1575A152DCF1800FB2DC0 /* Foundation.framework */; };
 		0AF1575D152DCF1800FB2DC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF1575C152DCF1800FB2DC0 /* CoreGraphics.framework */; };
@@ -15,22 +16,33 @@
 		0AF15769152DCF1800FB2DC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF15768152DCF1800FB2DC0 /* AppDelegate.m */; };
 		0AF1576C152DCF1800FB2DC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1576B152DCF1800FB2DC0 /* ViewController.m */; };
 		0AF1576F152DCF1800FB2DC0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1576D152DCF1800FB2DC0 /* ViewController.xib */; };
+		0AF15776152DCF5000FB2DC0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF15775152DCF5000FB2DC0 /* MapKit.framework */; };
+		0AF15779152DD33B00FB2DC0 /* ClusteredAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF15778152DD33B00FB2DC0 /* ClusteredAnnotation.m */; };
+		0AF1577B152DDA2000FB2DC0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF1577A152DDA2000FB2DC0 /* CoreLocation.framework */; };
+		0AF1577D152DE95200FB2DC0 /* locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1577C152DE95200FB2DC0 /* locations.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A5AE01F152DFF8900375ABB /* ClusteringMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusteringMapView.h; sourceTree = "<group>"; };
+		0A5AE020152DFF8900375ABB /* ClusteringMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusteringMapView.m; sourceTree = "<group>"; };
 		0AF15754152DCF1800FB2DC0 /* MapPinClustering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapPinClustering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF15758152DCF1800FB2DC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0AF1575A152DCF1800FB2DC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0AF1575C152DCF1800FB2DC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0AF15760152DCF1800FB2DC0 /* MapPinClustering-Info.plist */ = {isa = PBXFileReference; path = "MapPinClustering-Info.plist"; sourceTree = "<group>"; };
+		0AF15760152DCF1800FB2DC0 /* MapPinClustering-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapPinClustering-Info.plist"; sourceTree = "<group>"; };
 		0AF15762152DCF1800FB2DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AF15764152DCF1800FB2DC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0AF15766152DCF1800FB2DC0 /* MapPinClustering-Prefix.pch */ = {isa = PBXFileReference; path = "MapPinClustering-Prefix.pch"; sourceTree = "<group>"; };
-		0AF15767152DCF1800FB2DC0 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		0AF15766152DCF1800FB2DC0 /* MapPinClustering-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapPinClustering-Prefix.pch"; sourceTree = "<group>"; };
+		0AF15767152DCF1800FB2DC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0AF15768152DCF1800FB2DC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0AF1576A152DCF1800FB2DC0 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		0AF1576A152DCF1800FB2DC0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0AF1576B152DCF1800FB2DC0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0AF1576E152DCF1800FB2DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		0AF15775152DCF5000FB2DC0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0AF15777152DD33B00FB2DC0 /* ClusteredAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusteredAnnotation.h; sourceTree = "<group>"; };
+		0AF15778152DD33B00FB2DC0 /* ClusteredAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusteredAnnotation.m; sourceTree = "<group>"; };
+		0AF1577A152DDA2000FB2DC0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0AF1577C152DE95200FB2DC0 /* locations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = locations.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF1577B152DDA2000FB2DC0 /* CoreLocation.framework in Frameworks */,
+				0AF15776152DCF5000FB2DC0 /* MapKit.framework in Frameworks */,
 				0AF15759152DCF1800FB2DC0 /* UIKit.framework in Frameworks */,
 				0AF1575B152DCF1800FB2DC0 /* Foundation.framework in Frameworks */,
 				0AF1575D152DCF1800FB2DC0 /* CoreGraphics.framework in Frameworks */,
@@ -47,6 +61,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A5AE022152DFF8F00375ABB /* ClusteringMapView */ = {
+			isa = PBXGroup;
+			children = (
+				0AF15777152DD33B00FB2DC0 /* ClusteredAnnotation.h */,
+				0AF15778152DD33B00FB2DC0 /* ClusteredAnnotation.m */,
+				0A5AE01F152DFF8900375ABB /* ClusteringMapView.h */,
+				0A5AE020152DFF8900375ABB /* ClusteringMapView.m */,
+			);
+			name = ClusteringMapView;
+			sourceTree = "<group>";
+		};
 		0AF15749152DCF1800FB2DC0 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +92,8 @@
 		0AF15757152DCF1800FB2DC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AF1577A152DDA2000FB2DC0 /* CoreLocation.framework */,
+				0AF15775152DCF5000FB2DC0 /* MapKit.framework */,
 				0AF15758152DCF1800FB2DC0 /* UIKit.framework */,
 				0AF1575A152DCF1800FB2DC0 /* Foundation.framework */,
 				0AF1575C152DCF1800FB2DC0 /* CoreGraphics.framework */,
@@ -77,6 +104,7 @@
 		0AF1575E152DCF1800FB2DC0 /* MapPinClustering */ = {
 			isa = PBXGroup;
 			children = (
+				0A5AE022152DFF8F00375ABB /* ClusteringMapView */,
 				0AF15767152DCF1800FB2DC0 /* AppDelegate.h */,
 				0AF15768152DCF1800FB2DC0 /* AppDelegate.m */,
 				0AF1576A152DCF1800FB2DC0 /* ViewController.h */,
@@ -94,6 +122,7 @@
 				0AF15761152DCF1800FB2DC0 /* InfoPlist.strings */,
 				0AF15764152DCF1800FB2DC0 /* main.m */,
 				0AF15766152DCF1800FB2DC0 /* MapPinClustering-Prefix.pch */,
+				0AF1577C152DE95200FB2DC0 /* locations.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,6 +180,7 @@
 			files = (
 				0AF15763152DCF1800FB2DC0 /* InfoPlist.strings in Resources */,
 				0AF1576F152DCF1800FB2DC0 /* ViewController.xib in Resources */,
+				0AF1577D152DE95200FB2DC0 /* locations.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +194,8 @@
 				0AF15765152DCF1800FB2DC0 /* main.m in Sources */,
 				0AF15769152DCF1800FB2DC0 /* AppDelegate.m in Sources */,
 				0AF1576C152DCF1800FB2DC0 /* ViewController.m in Sources */,
+				0AF15779152DD33B00FB2DC0 /* ClusteredAnnotation.m in Sources */,
+				0A5AE021152DFF8900375ABB /* ClusteringMapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +307,7 @@
 				0AF15774152DCF1800FB2DC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
