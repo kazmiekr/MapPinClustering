@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AF15759152DCF1800FB2DC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF15758152DCF1800FB2DC0 /* UIKit.framework */; };
+		0AF1575B152DCF1800FB2DC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF1575A152DCF1800FB2DC0 /* Foundation.framework */; };
+		0AF1575D152DCF1800FB2DC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF1575C152DCF1800FB2DC0 /* CoreGraphics.framework */; };
+		0AF15763152DCF1800FB2DC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AF15761152DCF1800FB2DC0 /* InfoPlist.strings */; };
+		0AF15765152DCF1800FB2DC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF15764152DCF1800FB2DC0 /* main.m */; };
+		0AF15769152DCF1800FB2DC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF15768152DCF1800FB2DC0 /* AppDelegate.m */; };
+		0AF1576C152DCF1800FB2DC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1576B152DCF1800FB2DC0 /* ViewController.m */; };
+		0AF1576F152DCF1800FB2DC0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1576D152DCF1800FB2DC0 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0AF15754152DCF1800FB2DC0 /* MapPinClustering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapPinClustering.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF15758152DCF1800FB2DC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0AF1575A152DCF1800FB2DC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0AF1575C152DCF1800FB2DC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0AF15760152DCF1800FB2DC0 /* MapPinClustering-Info.plist */ = {isa = PBXFileReference; path = "MapPinClustering-Info.plist"; sourceTree = "<group>"; };
+		0AF15762152DCF1800FB2DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AF15764152DCF1800FB2DC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AF15766152DCF1800FB2DC0 /* MapPinClustering-Prefix.pch */ = {isa = PBXFileReference; path = "MapPinClustering-Prefix.pch"; sourceTree = "<group>"; };
+		0AF15767152DCF1800FB2DC0 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		0AF15768152DCF1800FB2DC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0AF1576A152DCF1800FB2DC0 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		0AF1576B152DCF1800FB2DC0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0AF1576E152DCF1800FB2DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AF15751152DCF1800FB2DC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF15759152DCF1800FB2DC0 /* UIKit.framework in Frameworks */,
+				0AF1575B152DCF1800FB2DC0 /* Foundation.framework in Frameworks */,
+				0AF1575D152DCF1800FB2DC0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AF15749152DCF1800FB2DC0 = {
+			isa = PBXGroup;
+			children = (
+				0AF1575E152DCF1800FB2DC0 /* MapPinClustering */,
+				0AF15757152DCF1800FB2DC0 /* Frameworks */,
+				0AF15755152DCF1800FB2DC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AF15755152DCF1800FB2DC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AF15754152DCF1800FB2DC0 /* MapPinClustering.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AF15757152DCF1800FB2DC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AF15758152DCF1800FB2DC0 /* UIKit.framework */,
+				0AF1575A152DCF1800FB2DC0 /* Foundation.framework */,
+				0AF1575C152DCF1800FB2DC0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AF1575E152DCF1800FB2DC0 /* MapPinClustering */ = {
+			isa = PBXGroup;
+			children = (
+				0AF15767152DCF1800FB2DC0 /* AppDelegate.h */,
+				0AF15768152DCF1800FB2DC0 /* AppDelegate.m */,
+				0AF1576A152DCF1800FB2DC0 /* ViewController.h */,
+				0AF1576B152DCF1800FB2DC0 /* ViewController.m */,
+				0AF1576D152DCF1800FB2DC0 /* ViewController.xib */,
+				0AF1575F152DCF1800FB2DC0 /* Supporting Files */,
+			);
+			path = MapPinClustering;
+			sourceTree = "<group>";
+		};
+		0AF1575F152DCF1800FB2DC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AF15760152DCF1800FB2DC0 /* MapPinClustering-Info.plist */,
+				0AF15761152DCF1800FB2DC0 /* InfoPlist.strings */,
+				0AF15764152DCF1800FB2DC0 /* main.m */,
+				0AF15766152DCF1800FB2DC0 /* MapPinClustering-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AF15753152DCF1800FB2DC0 /* MapPinClustering */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF15772152DCF1800FB2DC0 /* Build configuration list for PBXNativeTarget "MapPinClustering" */;
+			buildPhases = (
+				0AF15750152DCF1800FB2DC0 /* Sources */,
+				0AF15751152DCF1800FB2DC0 /* Frameworks */,
+				0AF15752152DCF1800FB2DC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapPinClustering;
+			productName = MapPinClustering;
+			productReference = 0AF15754152DCF1800FB2DC0 /* MapPinClustering.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AF1574B152DCF1800FB2DC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Universal Mind, Inc";
+			};
+			buildConfigurationList = 0AF1574E152DCF1800FB2DC0 /* Build configuration list for PBXProject "MapPinClustering" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0AF15749152DCF1800FB2DC0;
+			productRefGroup = 0AF15755152DCF1800FB2DC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AF15753152DCF1800FB2DC0 /* MapPinClustering */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AF15752152DCF1800FB2DC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF15763152DCF1800FB2DC0 /* InfoPlist.strings in Resources */,
+				0AF1576F152DCF1800FB2DC0 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AF15750152DCF1800FB2DC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF15765152DCF1800FB2DC0 /* main.m in Sources */,
+				0AF15769152DCF1800FB2DC0 /* AppDelegate.m in Sources */,
+				0AF1576C152DCF1800FB2DC0 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0AF15761152DCF1800FB2DC0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AF15762152DCF1800FB2DC0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0AF1576D152DCF1800FB2DC0 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AF1576E152DCF1800FB2DC0 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AF15770152DCF1800FB2DC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0AF15771152DCF1800FB2DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AF15773152DCF1800FB2DC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MapPinClustering/MapPinClustering-Prefix.pch";
+				INFOPLIST_FILE = "MapPinClustering/MapPinClustering-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0AF15774152DCF1800FB2DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MapPinClustering/MapPinClustering-Prefix.pch";
+				INFOPLIST_FILE = "MapPinClustering/MapPinClustering-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AF1574E152DCF1800FB2DC0 /* Build configuration list for PBXProject "MapPinClustering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF15770152DCF1800FB2DC0 /* Debug */,
+				0AF15771152DCF1800FB2DC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AF15772152DCF1800FB2DC0 /* Build configuration list for PBXNativeTarget "MapPinClustering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF15773152DCF1800FB2DC0 /* Debug */,
+				0AF15774152DCF1800FB2DC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AF1574B152DCF1800FB2DC0 /* Project object */;
+}
