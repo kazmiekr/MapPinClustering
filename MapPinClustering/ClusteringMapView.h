@@ -6,6 +6,7 @@
 //
 
 #import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface ClusteringMapView : MKMapView<MKMapViewDelegate>
 

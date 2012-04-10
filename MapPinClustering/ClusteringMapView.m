@@ -246,6 +246,10 @@
     // Loop over location and upate visibility
     for ( ClusteredAnnotation *annotation in [self annotations] )
     {
+        // Skip over the MKUserLocation annotation
+        if ( [annotation isKindOfClass:[MKUserLocation class]] )
+            continue;
+        
         // Get the annotation view for the annotaiton
         MKAnnotationView *av = [self viewForAnnotation:annotation];
         // Get the x/y point of the annotation
