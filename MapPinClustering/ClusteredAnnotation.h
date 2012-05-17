@@ -14,6 +14,8 @@
     NSString *subtitle;
     CLLocationCoordinate2D clusterCoordinate;
     CLLocationCoordinate2D actualCoordinate;
+    
+    NSMutableArray *childAnnotations;
 }
 
 @property (nonatomic, readwrite) CLLocationCoordinate2D coordinate;
@@ -21,8 +23,11 @@
 @property (nonatomic, readwrite) CLLocationCoordinate2D actualCoordinate;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, retain) NSMutableArray *childAnnotations;
 
 - (id)initWithCoordinate:(CLLocationCoordinate2D) aCoordinate;
+- (void) addChild:(ClusteredAnnotation*) childAnnotation;
+- (void) removeAllChildren;
 - (NSString *)getKey;
 
 @end
