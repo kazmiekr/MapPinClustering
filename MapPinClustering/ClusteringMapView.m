@@ -276,6 +276,10 @@
                 // Add our point to our collections and lookups
                 [coordDict setObject:annotation forKey:value];
                 [coordSet addObject:value];
+                
+                //since we're re-doing the clustering
+                [annotation removeAllChildren];
+                
                 // Ensure the annotation is using it's actualCoordinate
                 annotation.coordinate = annotation.actualCoordinate;
                 annotation.clusterCoordinate = annotation.actualCoordinate;
@@ -291,6 +295,11 @@
             ClusteredAnnotation *clusterCenter = [coordDict objectForKey:value];
             // Set it's clustered point
             annotation.clusterCoordinate = clusterCenter.coordinate;
+            
+            //add the pin to the cluster's children array
+            [clusterCenter addChild:annotation];
+            //clear the children for the newly created child
+            [annotation removeAllChildren];
             
             // Animate the movement of the pin to it's cluster point.  This is
             // visible during zoom out operations
@@ -321,6 +330,10 @@
             // Set the coordinate based on it's clusterCoordinate and update it to it's actual location
             annotation.coordinate = annotation.clusterCoordinate;
             annotation.clusterCoordinate = annotation.actualCoordinate;
+            
+            //since this is a newly created cluster pin
+            //removing all the child pins
+            [annotation removeAllChildren];
             
             // Animate the pin from it's cluster point to it's actual location
             [UIView animateWithDuration:interval animations:^{
