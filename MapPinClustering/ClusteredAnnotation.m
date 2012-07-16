@@ -9,7 +9,7 @@
 
 @implementation ClusteredAnnotation
 
-@synthesize title, subtitle, coordinate, clusterCoordinate, actualCoordinate;
+@synthesize title, subtitle, coordinate, clusterCoordinate, actualCoordinate, childAnnotations;
 
 - (id)initWithCoordinate:(CLLocationCoordinate2D) aCoordinate{
     if ( self = [super init])
@@ -21,8 +21,32 @@
         clusterCoordinate = aCoordinate;
         // Set the actual coordinate
         actualCoordinate = aCoordinate;
+        //Initialize the childAnnotations array
+        childAnnotations = [[NSMutableArray alloc] init];
     }
     return self;
+}
+
+- (void) addChild:(ClusteredAnnotation*) childAnnotation {
+    [childAnnotations addObject:childAnnotation];
+}
+
+- (void) removeAllChildren {
+    [childAnnotations removeAllObjects];
+}
+
+- (NSString*) title {
+    if ([childAnnotations count] > 0) {
+        return [NSString stringWithFormat:@"%d pins present", [childAnnotations count] + 1];
+    }
+    return title;
+}
+
+- (NSString*) subtitle {
+    if ([childAnnotations count] > 0) {
+        return nil;
+    }
+    return subtitle;
 }
 
 /*
